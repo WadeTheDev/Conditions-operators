@@ -122,3 +122,21 @@
 //     roundedNumber = Math.floor(roundedNumber)
 //     console.log(roundedNumber)
 // }
+
+
+let roundedNumber = "32.222223432242428"
+let indexOfRounded =  roundedNumber.indexOf(".")
+let splitNumber = roundedNumber.split(".")[1]
+let newSplit = splitNumber.split("")[0]
+
+if(newSplit >= 5){
+    roundedNumber = Math.ceil(roundedNumber)
+    console.log(roundedNumber)
+}else{
+    roundedNumber = Math.floor(roundedNumber)
+    console.log(roundedNumber)
+}
+
+
+
+
